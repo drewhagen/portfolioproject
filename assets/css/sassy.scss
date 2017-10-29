@@ -1,0 +1,47 @@
+
+$font-stack: helvetica;
+
+/* WEBSITE COLOR PALETTE */
+$backdrop: #ecf0f1;
+
+
+body {
+  background-color: $backdrop;
+  font-family: $font-stack;
+}
+
+#navbar {
+  border: solid black 1px;
+  background-color: #3498db;
+  padding: 0px 20px 50px 0px;
+  margin: -10px;
+}
+
+.nav {
+  border: solid black 1px;
+  float: left;
+}
+
+.navlink {
+  background-color: #7f8c8d;
+  color: white;
+  padding: 10px;
+}
+
+#navlinks {
+  margin-top: 50px;
+}
+
+#name-tag {
+  /* top right bottom left */
+  margin: 15px 80px 15px 10px;
+  padding: 0px 15px 0px 15px;
+  border-radius: 10px;
+  background-color: #2c3e50;
+  color: white;
+}
+
+#display {
+  margin: 100px 100px 100px 100px;
+  padding: 10px 10px 10px 10px;
+}
