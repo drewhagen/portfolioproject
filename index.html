@@ -15,23 +15,32 @@
     <script src="assets/js/script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
     </script>
+
+    <script>
+      function resizeIframe(obj) {
+        obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+      }
+    </script>
+
   </head>
-  <body>
+  <body style="overflow-y: hidden">
     <div id="navbar">
+      <!--img src="assets/img/JPEG_example_JPG_RIP_050.jpg"/-->
       <img class="nav" src="assets/img/personal_logo_T2.svg" width="100px"/>
       <header class="nav" id="name-tag" style="display: block">
           <h2> Drew Hagen </h2>
       </header>
       <div id="navlinks">
-          <a class="nav navlink" href="" onclick="function(about)">About Me</a>
-          <a class="nav navlink" href="" onclick="function(education)">Education</a>
-          <a class="nav navlink" href="" onclick="function(skills)">Skills</a>
-          <a class="nav navlink" href="" onclick="function(work)">Work</a>
-          <a class="nav navlink" href="" onclick="function(contact)">Contact</a>
+          <a class="nav navlink" href="assets/about.html" target="source">About Me</a>
+          <a class="nav navlink" href="assets/education.html" target="source">Education</a>
+          <a class="nav navlink" href="assets/skills.html" target="source">Skills</a>
+          <a class="nav navlink" href="assets/work.html" target="source">Work</a>
+          <a class="nav navlink" href="assets/contact.html" target="source">Contact</a>
       </div>
     </div>
 
-    <iframe id="display" src="pages/home.html"></iframe>
+    <iframe id="display" name="source" frameborder="0" onload="resizeIframe(this)"
+    src="assets/home.html" style="height: 500px; width: 1000px; border: none"></iframe>
 
 
   </body>
