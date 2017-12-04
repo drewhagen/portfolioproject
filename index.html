@@ -10,7 +10,6 @@
 
     <title>Basic HTML Site</title>
 
-
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="assets/js/script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
@@ -22,11 +21,19 @@
       }
     </script>
 
+    <!-- p5js stuff -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.sound.min.js"></script>
+    <script src="assets/js/sketch.js"></script>
   </head>
+
   <body style="overflow-y: hidden">
     <div id="navbar">
       <!--img src="assets/img/JPEG_example_JPG_RIP_050.jpg"/-->
-      <img class="nav" src="assets/img/personal_logo_T2.svg" width="100px"/>
+      <a href="">
+        <img class="nav logo" src="assets/img/personal_logo_T2.svg" width="100px"/>
+      </a>
       <header class="nav" id="name-tag" style="display: block">
           <h2> Drew Hagen </h2>
       </header>
@@ -38,10 +45,13 @@
           <a class="nav navlink" href="assets/contact.html" target="source">Contact</a>
       </div>
     </div>
-
+<p>
     <iframe id="display" name="source" frameborder="0" onload="resizeIframe(this)"
-    src="assets/home.html" style="height: 500px; width: 1000px; border: none"></iframe>
+    src="assets/home.html"
+    style="height: 650px; width: 100%; border: none;
+    overflow-x: hidden; overflow-y: auto;"></iframe>
 
+</p>
 
   </body>
 </html>

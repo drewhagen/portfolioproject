@@ -12,10 +12,68 @@
 
 
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="assets/js/script.js"></script>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style type="text/css">
+      .bs-example{
+        margin: 20px;
+      }
+    </style>
   </head>
 
   <body>
+
+<h3>Education Background</h3>
+<h1>Augsburg University</h1>
+<h2>Bachelor of Science in Comptuer Science, with Mathematics minor</h2>
+<h4>Major GPA: <span id="gpa">3.5</span></h4>
+
+<div class="bs-example">
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+            Notable Coursework</a>
+        </h4>
+      </div>
+      <div id="collapseOne" class="panel-collapse collapse in">
+        <div class="panel-body">
+          <ul class="notable">
+            <li>Relational Database Management and Design</li>
+            <li>Unix and C</li>
+            <li>Data Science with Python</li>
+            <li>Linear Algebra</li>
+            <li>Cryptography</li>
+            <li>Web Design</li>
+          </ul>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+            Projects</a>
+        </h4>
+      </div>
+      <div id="collapseTwo" class="panel-collapse collapse">
+        <div class="panel-body">
+          <ul class="projects">
+            <li>Compiler (Pascal-to-MIPS assembly) built in Java</li>
+            <li>2nd Place award winning Research on Raspberry Pi Cluster Computation</li>
+            <li>Javascript Projects: Calendar and Notecards on the web</li>
+            <li>Python Scripts, particularly centered around Source Code Refactoring Analysis</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
 
   </body>
 </html>

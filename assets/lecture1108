@@ -1,0 +1,32 @@
+<!-- Navigation Links -->
+    <ul class="smooth-scroll list-unstyled">
+      <li>
+        <h5><a href="#test1"> Scroll 1</a></h5></li>
+          <br />
+          <li>
+            <h5><a href="#test2"> Scroll 2</a></h5></li>
+            <br />
+          </ul>
+
+    <!-- linkables -->
+    <div id="test1">
+      <h3>Section 1</h3>
+      <hr>
+      <h5>Blach blach blach </h5>
+      <h5>Blach blach blach </h5>
+      <h5>Blach blach blach </h5>
+      <h5>Blach blach blach </h5>
+      <h5>Blach blach blach </h5>
+      <h5>Blach blach blach </h5>
+    </div>
+
+    <div id="test2">
+      <h3>Section 2</h3>
+      <hr>
+      <h5>Blach blach blach </h5>
+      <h5>Blach blach blach </h5>
+      <h5>Blach blach blach </h5>
+      <h5>Blach blach blach </h5>
+      <h5>Blach blach blach </h5>
+      <h5>Blach blach blach </h5>
+    </div>
