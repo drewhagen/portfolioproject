@@ -21,3 +21,21 @@ $( window ).resize( function () {
   });
 // Resize to fix all iframes on page load.
 }).resize();
+
+// Give a mouseover effect on Navigation bar buttons using JQuery
+$( ".navlink").mouseover(function() {
+  $( ".navlink").fadein()
+});
+
+function resizeIframe(obj) {
+  try {
+  obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+  }
+  catch(e) {
+    console.log ("Error Message: " + e.message);
+    console.log ("Error Code: ");
+    console.log (e.number & 0xFFFF);
+    console.log ("Error Name: " + e.name);
+  }
+
+}

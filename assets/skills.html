@@ -11,31 +11,181 @@
     <title>Skills</title>
 
     <!-- Bootstap stuff -->
-    <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!--link rel="stylesheet" href="css/style.css"-->
 
     <!-- p5.js stuff-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/p5.min.js"></script>
+    <!--script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/p5.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.dom.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.sound.min.js"></script>
-    <script src="js/skills_sketch.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.sound.min.js"></script-->
   </head>
 
   <body>
 
-<div>
-      <h2> Programming Languages </h2>
-  <a>
-    <img src="img/java_badge.png" width="100px"/>
-  </a>
-  <div hidden="true">Java stuff!</div>
-  <a>
-    <img src="img/python_badge.png" width="100px"/>
-  </a>
-  <div hidden="true">Python stuff!</div>
+    <div class="bs-example">
+    <div class="panel-group" id="accordion" style="float: left;">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" class="collapsed">
+                      <img src="img/java_badge.png" width="100px"/></a>
+                    </a>
+        </h4>
+      </div>
+      <div id="collapseOne" class="panel-collapse collapse in" aria-expanded="false">
+        <div class="panel-body">
+          <h3>Java Stuff!</h3>
+          <ul id="java stuff">
+            <li>Studied Data Structures with implementations in the strict typing language Java.</li>
+            <li>Studied Algorithms with implementations of sorts in Java.</li>
+            <li>Implemented a Pascal compiler using Java.</li>
+            <li>For all of the above, later went on to tutor other students in OOP theory using Java to achieve the same goals.</li>
+            <li>Also tutored use of Java FX.</li>
+            <li>Took a cryptography class which included use of Javax.Crypto.*</li>
+            <li>Competed on a team in MICS 2017 Coding Competition by using Java.</li>
+            <li>Frequent experience coding experience reading legacy Java and writing new Java at my Software Engineer Internship.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" class="collapsed">
+            <img src="img/python_badge.png" width="100px"/>
+          </a>
+        </h4>
+      </div>
+      <div id="collapseTwo" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+        <div class="panel-body">
+          <h3>Python Stuff!</h3>
+          <ul>
+            <li>Frequently used python to create fast scripts for Ubuntu Linux Lab Administration.</li>
+            <li>Implemented a web crawler using Python in Data Science course, and later again for an internship, to
+              crawl tag based markup languages</li>
+            <li>Learned about popular Anaconda library tools in python in Data Science course, including Pandas and NumPy.</li>
+            <li>Worked on a team to implement distributed/parallel processing using built in Python Multiprocessing on 8 Raspberry Pi nodes. Won Second place award.</li>
+            <li>Used python to interface data in a CSV file concerning refactor analysis in my internship.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+</div></div>
+
+    <!--div class="bs-example">
+      <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" class="">
+                <img src="img/java_badge.png" width="100px"/>Java Stuff!</a>
+            </h4>
+          </div>
+          <div id="collapseOne" class="panel-collapse collapse in" aria-expanded="true" style="">
+            <div class="panel-body">
+              <ul id="java stuff">
+                <li>Studied Data Structures with implementations in the strict typing language Java.</li>
+                <li>Studied Algorithms with implementations of sorts in Java.</li>
+                <li>Implemented a Pascal compiler using Java.</li>
+                <li>For all of the above, later went on to tutor other students in OOP theory using Java to achieve the same goals.</li>
+                <li>Also tutored use of Java FX.</li>
+                <li>Took a cryptography class which included use of Javax.Crypto.*</li>
+                <li>Competed on a team in MICS 2017 Coding Competition by using Java.</li>
+                <li>Frequent experience coding experience reading legacy Java and writing new Java at my Software Engineer Internship.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" class="" aria-expanded="true">
+                <img src="img/python_badge.png" width="100px"/>Python stuff!</a>
+            </h4>
+          </div>
+          <div id="collapseTwo" class="panel-collapse collapse in" aria-expanded="true" style="">
+            <div class="panel-body">
+              <ul>
+                <li>Frequently used python to create fast scripts for Ubuntu Linux Lab Administration.</li>
+                <li>Implemented a web crawler using Python in Data Science course, and later again for an internship, to
+                  crawl tag based markup languages</li>
+                <li>Learned about popular Anaconda library tools in python in Data Science course, including Pandas and NumPy.</li>
+                <li>Worked on a team to implement distributed/parallel processing using built in Python Multiprocessing on 8 Raspberry Pi nodes. Won Second place award.</li>
+                <li>Used python to interface data in a CSV file concerning refactor analysis in my internship.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+      <h2> Programming Languages </h2-->
+
+  <!--div>
+    <div class="panel-group" id="accordion">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+              <img src="img/java_badge.png" width="100px"/>Java stuff!
+            </a>
+          </h4>
+        </div>
+        <div id="collapseOne" class="panel-collapse collapse in">
+          <div class="panel-body">
+            <ul>
+              <li>Studied Data Structures with implementations in the strict typing language Java.</li>
+              <li>Studied Algorithms with implementations of sorts in Java.</li>
+              <li>Implemented a Pascal compiler using Java.</li>
+              <li>For all of the above, later went on to tutor other students in OOP theory using Java to achieve the same goals.</li>
+              <li>Also tutored use of Java FX.</li>
+              <li>Took a cryptography class which included use of Javax.Crypto.*</li>
+              <li>Competed on a team in MICS 2017 Coding Competition by using Java.</li>
+              <li>Frequent experience coding experience reading legacy Java and writing new Java at my Software Engineer Internship.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                  <img src="img/python_badge.png" width="100px"/>Python stuff!
+              </a>
+            </h4>
+          </div>
+          <div id="collapseTwo" class="panel-collapse collapse in">
+            <div class="panel-body">
+              <ul>
+                <li>Studied Data Structures with implementations in the strict typing language Java.</li>
+                <li>Studied Algorithms with implementations of sorts in Java.</li>
+                <li>Implemented a Pascal compiler using Java.</li>
+                <li>For all of the above, later went on to tutor other students in OOP theory using Java to achieve the same goals.</li>
+                <li>Also tutored use of Java FX.</li>
+                <li>Took a cryptography class which included use of Javax.Crypto.*</li>
+                <li>Competed on a team in MICS 2017 Coding Competition by using Java.</li>
+                <li>Frequent experience coding experience reading legacy Java and writing new Java at my Software Engineer Internship.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div-->
+
+  <!--div hidden="true">Python stuff!
+    <ul>
+      <li>Frequently used python to create fast scripts for Ubuntu Linux Lab Administration.</li>
+      <li>Implemented a web crawler using Python in Data Science course, and later again for an internship, to
+        crawl tag based markup languages</li>
+      <li>Learned about popular Anaconda library tools in python in Data Science course, including Pandas and NumPy.</li>
+      <li>Worked on a team to implement distributed/parallel processing using built in Python Multiprocessing on 8 Raspberry Pi nodes. Won Second place award.</li>
+      <li>Used python to interface data in a CSV file concerning refactor analysis in my internship.</li>
+    </ul>
+  </div>
   <a>
     <img src="img/javascript_badge.png" width="100px"/>
   </a>
@@ -68,7 +218,7 @@
 
     <h2> Computer Science </h2>
 
-    <h2> Other Useful Skills </h2>
+    <h2> Other Useful Skills </h2-->
 
   </body>
 </html>
