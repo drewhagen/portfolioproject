@@ -1,6 +1,64 @@
 body {
   background-color: #ecf0f1;
-  font-family: helvetica; }
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, #ffffff, #ecf0f1);
+  /*For Safari 5.1 to 6.0*/
+  background: -o-linear-gradient(right, #ffffff, #ecf0f1);
+  /*For Opera 11.1 to 12.0*/
+  background: -moz-linear-gradient(right, #ffffff, #ecf0f1);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #ffffff, #ecf0f1);
+  /* Standard syntax */
+  font-family: helvetica;
+  margin: 0 auto;
+  margin-left: 3px;
+  padding: 0;
+  /*  .navbar {
+      border: solid black 1px;
+      background-color: #3498db;
+      padding: 0px 20px 20px 0px;
+      margin: -10px;
+    }
+  
+    .nav-bar {
+  
+      .logo {
+        width: 50px;
+      }
+  
+      .navbar-brand {
+        position: relative;
+      }
+  
+      margin: 3px;
+      float: left;
+    }
+  
+    .nav-link {
+      border: solid black 1px;
+      border-color: #34495e;
+      border-radius: 10px;
+      background-color: #7f8c8d;
+      color: white;
+      padding: 10px;
+    }
+  
+    .social {
+      filter: invert(100%);
+    }
+  
+    #name-tag {
+      /* top right bottom left */
+                             /*
+  margin: 15px 80px 15px 10px;
+  padding: 0px 15px 0px 15px;
+  border-radius: 10px;
+  background-color: #2c3e50;
+  color: white;
+} */ }
+  body canvas {
+    position: relative;
+    z-index: -1px; }
   body iframe {
     margin: 3px;
     width: 100%;
@@ -8,36 +66,57 @@ body {
     overflow-x: hidden;
     overflow-y: auto; }
   body #navbar {
-    border: solid black 1px;
-    background-color: #3498db;
-    padding: 0px 20px 10px 0px;
-    margin: -10px; }
-  body .nav {
-    margin: 3px;
-    float: left; }
-    body .nav .logo {
-      position: relative;
-      bottom: -100px; }
-  body .navlink {
-    border: solid black 1px;
-    border-color: #34495e;
-    border-radius: 10px;
-    background-color: #7f8c8d;
-    color: white;
-    padding: 10px; }
-  body #navlinks {
-    margin-top: 50px; }
-  body #name-tag {
-    /* top right bottom left */
-    margin: 15px 80px 15px 10px;
-    padding: 0px 15px 0px 15px;
-    border-radius: 10px;
-    background-color: #2c3e50;
-    color: white; }
-  body canvas {
-    position: relative;
-    top: -400px;
-    width: 100%;
-    height: 400px; }
+    z-index: 1px;
+    background: #3498db;
+    /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, #00c6ff, #0072ff);
+    /*For Safari 5.1 to 6.0*/
+    background: -o-linear-gradient(right, #00c6ff, #0072ff);
+    /*For Opera 11.1 to 12.0*/
+    background: -moz-linear-gradient(right, #00c6ff, #0072ff);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    /* Standard syntax */ }
+    body #navbar .navbar-header #name-tag {
+      margin-top: 30px;
+      position: absolute;
+      padding: 5px;
+      margin-bottom: auto;
+      margin-left: 190px;
+      margin-right: 0px;
+      border: solid black 1px;
+      border-color: #2c3e50;
+      border-radius: 7px;
+      background-color: #34495e;
+      color: white; }
+    body #navbar .navbar-header #mypic {
+      margin-top: 10px; }
+    body #navbar .navbar-header .logo:hover {
+      transform: scale(1.1); }
+    body #navbar .navbar-header .navbar-toggle {
+      background-color: #95a5a6;
+      border: solid 1px;
+      border-color: #2980b9;
+      margin-top: 32px; }
+    body #navbar .btn {
+      background-color: #7f8c8d;
+      padding: 10px;
+      margin: 30px 0px 30px 0px;
+      color: white;
+      border: solid black 1px;
+      border-color: #2980b9;
+      border-radius: 7px; }
+    body #navbar .btn:active {
+      background-color: #34495e;
+      transform: scale(1.05); }
+    body #navbar .btn:focus {
+      background-color: #34495e;
+      transform: scale(1.05); }
+    body #navbar .btn:hover {
+      background-color: #e74c3c;
+      transform: scale(1.05); }
+    body #navbar .social:hover {
+      color: #e74c3c;
+      transform: scale(1.05); }
 
 /*# sourceMappingURL=style.css.map */

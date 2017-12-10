@@ -10,10 +10,16 @@
 
     <title>Basic HTML Site</title>
 
-    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- BOOTSTAP! -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="assets/css/style.css">
     <script src="assets/js/script.js"></script>
 
+    <!-- ICONs! Yay! -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- p5js stuff -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/p5.min.js"></script>
@@ -23,28 +29,98 @@
   </head>
 
   <body style="overflow-y: hidden">
-    <div id="navbar">
-      <!--img src="assets/img/JPEG_example_JPG_RIP_050.jpg"/-->
-      <a href="">
-        <img class="nav logo" src="assets/img/personal_logo_T2.svg" width="100px"/>
-      </a>
-      <header class="nav" id="name-tag" style="display: block">
-          <h2> Drew Hagen </h2>
-      </header>
 
-      <div id="navlinks">
-          <a class="nav navlink" href="assets/about.html" target="source">About Me</a>
-          <a class="nav navlink" href="assets/education.html" target="source">Education</a>
-          <a class="nav navlink" href="assets/skills.html" target="source">Skills</a>
-          <a class="nav navlink" href="assets/work.html" target="source">Work</a>
-          <a class="nav navlink" href="assets/contact.html" target="source">Contact</a>
+    <nav id="navbar" onload="canvasAlignToNav()">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </button>
+        <a href="">
+          <img class="logo pull-left"
+              src="assets/img/personal_logo_T2.svg" width="100px"/>
+        </a>
+        <h3 id="name-tag"> Drew Hagen </h3>
+        <img id="mypic" src="assets/img/IMG_5242.png" width="80px"/>
       </div>
-      <div id="social_bar">
-        <img class="social" src="assets/social_img/facebook.svg" width="40px"/>
-        <img class="social" src="assets/social_img/twitter.svg" width="40px"/>
-        <img class="social" src="assets/social_img/github.svg" width="40px"/>
+      <div class="collapse navbar-collapse">
+        <div class="navbar-nav pull-right">
+            <a class="active nav-item nav-link btn navbar-btn"
+                href="assets/about.html" target="source">
+                <i class="fa fa-question-circle" aria-hidden="true"></i> About Me</a>
+            <a class="nav-item nav-link btn navbar-btn"
+                href="assets/education.html" target="source">
+                <i class="fa fa-graduation-cap" aria-hidden="true"></i> Education</a>
+            <a class="nav-item nav-link btn navbar-btn"
+                href="assets/skills.html" target="source">
+                <i class="fa fa-code" aria-hidden="true"></i> Skills</a>
+            <a class="nav-item nav-link btn navbar-btn"
+                href="assets/work.html" target="source">
+                <i class="fa fa-briefcase" aria-hidden="true"></i> Work</a>
+            <a class="nav-item nav-link btn navbar-btn"
+                href="assets/contact.html" target="source">
+                <i class="fa fa-address-card-o" aria-hidden="true"></i> Contact</a>
+        </div>
+        <div id="social_bar">
+          <i class="social fa fa-facebook-square fa-2x"
+                aria-hidden="true" width="100px"></i>
+          <i class="social fa fa-github-square fa-2x"
+                aria-hidden="true" width="100px"></i>
+          <i class="social fa fa-linkedin-square fa-2x"
+                aria-hidden="true" width="100px"></i>
+        </div>
+      </div><!-- .nav-collapse -->
+    </nav>
+
+    <!--nav class="navbar bg-primary navbar-expand-lg">
+      <!--img src="assets/img/JPEG_example_JPG_RIP_050.jpg"/>
+      <div style="float: left;">
+        <a href="">
+          <img class="logo"
+              src="assets/img/personal_logo_T2.svg" width="100px"/>
+        </a>
+        <header id="name-tag" style="display: block">
+            <h2> Drew Hagen </h2>
+        </header>
       </div>
-    </div>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse"
+        data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+          aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <div id="navbar-nav">
+            <a class="nav-item nav-link"
+                href="assets/about.html" target="source">About Me</a>
+            <a class="nav-item nav-link"
+                href="assets/education.html" target="source">Education</a>
+            <a class="nav-item nav-link"
+                href="assets/skills.html" target="source">Skills</a>
+            <a class="nav-item nav-link"
+                href="assets/work.html" target="source">Work</a>
+            <a class="nav-item nav-link"
+                href="assets/contact.html" target="source">Contact</a>
+        </div>
+
+        <div id="social_bar">
+          <i class="social fa fa-facebook-square fa-2x"
+                aria-hidden="true" width="100px"></i>
+          <i class="social fa fa-github-square fa-2x"
+                aria-hidden="true" width="100px"></i>
+          <i class="social fa fa-linkedin-square fa-2x"
+                aria-hidden="true" width="100px"></i>
+        </div>
+
+        <nav class="navbar navbar-light bg-light">
+          <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </nav>
+      </div>
+    </nav-->
+
 <p>
     <iframe id="display" name="source" frameborder="0" onload="resizeIframe(this)"
     src="assets/home.html"
