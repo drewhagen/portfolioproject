@@ -13,17 +13,61 @@
     <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
     <link rel="stylesheet" href="css/style.css">
+    
   </head>
 
   <body>
 
-    <form action="">
-      Quick Contact:<br>
-      <textarea name="paragraph_text" cols="70" rows="10"></textarea><br>
-      <input class="btn btn-primary" type="submit" value="Submit">
+<table>
+    <form method="post" action="mailto:drew.a.hagen@gmail.com">
+      <h3>
+        Quick Contact:
+      </h3>
+      <tr>
+        <td>
+          Your First Name
+        </td>
+        <td>
+        <textarea name="First Name" cols="60" rows="1"></textarea>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Last Name
+        </td>
+        <td>
+          <textarea name="Last Name" cols="60" rows="1"></textarea><br>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Your Email
+        </td>
+        <td>
+          <textarea name="Your Email" cols="60" rows="1"></textarea><br>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Company
+        </td>
+        <td>
+          <textarea name="Company" cols="60" rows="1"></textarea><br>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <textarea name="paragraph_text" cols="75" rows="10"></textarea><br>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input class="btn btn-primary" type="submit" value="Send Email">
+        </td>
+      </tr>
     </form>
+</table>
 
   </body>
 </html>

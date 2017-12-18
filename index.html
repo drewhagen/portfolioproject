@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="assets/js/script.js"></script>
@@ -21,11 +22,11 @@
     <!-- ICONs! Yay! -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <!-- p5js stuff -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/p5.min.js"></script>
+    <!-- P5.js Stuff: Disabled (TO BE IMPLEMENTED IN FUTURE ITERATIONS) -->
+    <!--script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/p5.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.dom.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.sound.min.js"></script>
-    <script src="assets/js/sketch.js"></script>
+    <script src="assets/js/sketch.js"></script-->
   </head>
 
   <body style="overflow-y: hidden">
@@ -44,19 +45,19 @@
       </div>
       <div class="collapse navbar-collapse">
         <div class="navbar-nav pull-right">
-            <a class="active nav-item nav-link btn navbar-btn"
+            <a id="about" class="active nav-item nav-link btn navbar-btn"
                 href="assets/about.html" target="source">
-                <i class="fa fa-question-circle" aria-hidden="true"></i> About Me</a>
-            <a class="nav-item nav-link btn navbar-btn"
+                <i class="fa fa-info-circle" aria-hidden="true"></i> About Me</a>
+            <a id="edu" class="nav-item nav-link btn navbar-btn"
                 href="assets/education.html" target="source">
                 <i class="fa fa-graduation-cap" aria-hidden="true"></i> Education</a>
-            <a class="nav-item nav-link btn navbar-btn"
+            <a id="skills" class="nav-item nav-link btn navbar-btn"
                 href="assets/skills.html" target="source">
                 <i class="fa fa-code" aria-hidden="true"></i> Skills</a>
-            <a class="nav-item nav-link btn navbar-btn"
+            <a id="work" class="nav-item nav-link btn navbar-btn"
                 href="assets/work.html" target="source">
                 <i class="fa fa-briefcase" aria-hidden="true"></i> Work</a>
-            <a class="nav-item nav-link btn navbar-btn"
+            <a id="contact" class="nav-item nav-link btn navbar-btn"
                 href="assets/contact.html" target="source">
                 <i class="fa fa-address-card-o" aria-hidden="true"></i> Contact</a>
         </div>

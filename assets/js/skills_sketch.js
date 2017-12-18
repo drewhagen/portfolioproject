@@ -18,3 +18,7 @@ $( window ).resize( function () {
   //resetCanvas() //commented out function
 // Resize to fix all iframes on page load.
 }).resize();
+
+/*$( "img" ).onClick(function() {
+  $( this ).addClass("active");
+})*/

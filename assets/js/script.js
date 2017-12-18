@@ -57,6 +57,11 @@ function resetCanvas() {
   canvasAlignToNav();
 }
 
+function navigation_Selector() {
+  navBtnList = ["about", "edu", "skills", "work", "contact"];
+  
+}
+
 //$( "body" ).ready(canvasAlignToNav); //commented out function
 
 

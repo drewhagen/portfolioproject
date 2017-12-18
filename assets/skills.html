@@ -11,9 +11,11 @@
     <title>Skills</title>
 
     <!-- Bootstap stuff -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
 
     <style>
       body {
@@ -31,56 +33,133 @@
   </head>
 
   <body>
-
+  <div class="container-fluid">
     <div class="bs-example">
-    <div class="panel-group" id="accordion" style="float: left;">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" class="collapsed">
-                      <img src="img/java_badge.png" width="100px"/></a>
-        </h4>
-      </div>
-      <div id="collapseOne" class="panel-collapse collapse in" aria-expanded="false">
-        <div class="panel-body textRotate">
-          <h3>Java Stuff!</h3>
-          <ul id="java stuff">
-            <li>Studied Data Structures with implementations in the strict typing language Java.</li>
-            <li>Studied Algorithms with implementations of sorts in Java.</li>
-            <li>Implemented a Pascal compiler using Java.</li>
-            <li>For all of the above, later went on to tutor other students in OOP theory using Java to achieve the same goals.</li>
-            <li>Also tutored use of Java FX.</li>
-            <li>Took a cryptography class which included use of Javax.Crypto.*</li>
-            <li>Competed on a team in MICS 2017 Coding Competition by using Java.</li>
-            <li>Frequent experience coding experience reading legacy Java and writing new Java at my Software Engineer Internship.</li>
-          </ul>
+      <div class="panel-group" id="accordion" style="float: left;">
+          <div class="panel panel-default">
+              <div class="panel-heading">
+                  <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" class="collapsed">
+                        <img src="img/java_badge.png" width="100px" style="margin-left: 80px"/></a>
+          </h4>
+        </div>
+        <div id="collapseOne" class="panel-collapse collapse in" aria-expanded="false">
+          <div class="card panel-body textRotate">
+            <div class="card-body scroll-box">
+            <h3 class="card-title">Java Stuff!</h3>
+            <ul class="card-text" id="java_stuff">
+              <li>Studied Data Structures with implementations in the strict typing language Java.</li>
+              <li>Studied Algorithms with implementations of sorts in Java.</li>
+              <li>Implemented a Pascal compiler using Java.</li>
+              <li>For all of the above, later went on to tutor other students in OOP theory using Java to achieve the same goals.</li>
+              <li>Also tutored use of Java FX.</li>
+              <li>Took a cryptography class which included use of Javax.Crypto.*</li>
+              <li>Competed on a team in MICS 2017 Coding Competition by using Java.</li>
+              <li>Frequent experience coding experience reading legacy Java and writing new Java at my Software Engineer Internship.</li>
+            </ul>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" class="collapsed">
-            <img src="img/python_badge.png" width="100px"/>
-          </a>
-        </h4>
-      </div>
-      <div id="collapseTwo" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
-        <div class="panel-body textRotate">
-          <h3>Python Stuff!</h3>
-          <ul>
-            <li>Frequently used python to create fast scripts for Ubuntu Linux Lab Administration.</li>
-            <li>Implemented a web crawler using Python in Data Science course, and later again for an internship, to
-              crawl tag based markup languages</li>
-            <li>Learned about popular Anaconda library tools in python in Data Science course, including Pandas and NumPy.</li>
-            <li>Worked on a team to implement distributed/parallel processing using built in Python Multiprocessing on 8 Raspberry Pi nodes. Won Second place award.</li>
-            <li>Used python to interface data in a CSV file concerning refactor analysis in my internship.</li>
-          </ul>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" class="collapsed">
+              <img src="img/python_badge.png" width="100px" style="margin-left: 130px"/>
+            </a>
+          </h4>
+        </div>
+        <div id="collapseTwo" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+          <div class="card panel-body textRotate">
+            <div class="card-body scroll-box">
+            <h3 class="card-title">Python Stuff!</h3>
+            <ul class="card-text" id="python_stuff">
+              <li>Frequently used python to create fast scripts for Ubuntu Linux Lab Administration.</li>
+              <li>Implemented a web crawler using Python in Data Science course, and later again for an internship, to
+                crawl tag based markup languages</li>
+              <li>Learned about popular Anaconda library tools in python in Data Science course, including Pandas and NumPy.</li>
+              <li>Worked on a team to implement distributed/parallel processing using built in Python Multiprocessing on 8 Raspberry Pi nodes. Won Second place award.</li>
+              <li>Used python to interface data in a CSV file concerning refactor analysis in my internship.</li>
+            </ul>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-</div></div>
-
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" class="collapsed">
+              <img src="img/javascript_badge.png" width="100px" style="margin-left: 80px">
+            </a>
+          </h4>
+        </div>
+        <div id="collapseThree" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+          <div class="card panel-body textRotate">
+            <div class="card-body scroll-box">
+            <h3 class="card-title">Javascript Stuff!</h3>
+            <ul class="card-text" id="javascript_stuff">
+              <li>Experimentation with Javascript via <a href="codepen.io">Codepen.io
+              </a>creating a calendar and electronic notecards.</li>
+              <li>Frequent use of Javascript alongside HTML and XSL at my internship.</li>
+              <li>Use with Javascript libraries such as chart.js and sheet.js</li>
+              <li>Exposure to many Javascript tutorials, such as one manipulating HTML Canvas</li>
+              <li>Use of jQuery and TypeScript.</li>
+              <li>Use of NodeJ CLI, and proprietary npm packages.</li>
+              <li>Currently learning Angular 4</li>
+            </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" class="collapsed">
+              <img src="img/C_lang_badge.png" width="100px" style="margin-left: 130px"/>
+            </a>
+          </h4>
+        </div>
+        <div id="collapseFour" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+          <div class="card panel-body textRotate">
+            <div class="card-body scroll-box">
+            <h3 class="card-title">C Stuff! Exposure in Undergrad</h3>
+            <ul class="card-text" id="C_stuff">
+              <li>Took a course known as Unix and C.</li>
+              <li>In the process, implemented many exercises</li>
+              <li>Researched Message Passing Interface (MPI for C) to learn about Parallel Procressing in C</li>
+              <li>Exposure to Cython.</li>
+              <li>Exposure to C++ </li>
+              <li>Work with MIPS assembly, and studied compilation of C into MIPS.</li>
+            </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" class="collapsed">
+              <img src="img/swift_badge.png" width="100px" style="margin-left: 80px"/>
+            </a>
+          </h4>
+        </div>
+        <div id="collapseFive" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+          <div class="card panel-body textRotate">
+            <div class="card-body scroll-box">
+            <h3 class="card-title">Swift Stuff! For Leisure</h3>
+            <ul class="card-text" id="swift_stuff">
+              <li>Worked a remote git internship reading and writing some Swift code</li>
+              <li>Use of XCode and Jetbrains App Code</li>
+              <li>Pluralsight and Big Nerd Ranch tutorials</li>
+              <li>Owner of Apple products to test Swift and SDKs (like ARkit and WatchKit) on</li>
+              <li>Swift is just a language I play with for fun. :)</li>
+            </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div></div>
+</div>
     <!--div class="bs-example">
       <div class="panel-group" id="accordion">
         <div class="panel panel-default">
